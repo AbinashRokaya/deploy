@@ -3,7 +3,8 @@ services:
     name: django-app
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn projectname.wsgi:application"
+    startCommand: "gunicorn student.wsgi:application"
+
     envVars:
       - key: SECRET_KEY
         generateValue: true
